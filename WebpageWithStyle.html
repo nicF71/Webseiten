@@ -1,0 +1,381 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf8"/>
+        <title>CSS</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap" rel="stylesheet">
+        
+        <style type="text/css">
+        
+            h3 {
+                color: brown   
+            }
+            
+            p {        
+                font-size: 13
+            }
+            
+            .red{
+                color: red;
+            }
+            
+            .orange{
+                color: orange;
+            }
+            .yellow{
+                color: yellow;
+            }
+            .green{
+                color: yellowgreen;
+            }
+            .Nic{
+                color: firebrick;
+                background-color: beige;
+                width: 1890px;  
+            }
+            .clearFloat{
+                clear: both;
+            }
+            .unterstrichen{
+                text-decoration: underline;  
+            }
+            .square{
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left
+            }
+            .bold{
+                font-weight: bold;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .beides{
+                font-weight: bold;
+            }
+            .underlined{
+                text-decoration: underline;
+            }
+            .Link{
+                text-decoration: none;
+            }
+            a.hover:hover{
+                text-decoration: overline;
+                color: yellow;
+            }
+            #square1{
+                background-color: bisque;
+                border: 2px black solid;
+            }
+            #square2{
+                background-color:antiquewhite;
+                border: 2px green dotted;
+            }
+            #square3{
+                background-color:blanchedalmond;
+                border: 2px red dashed;
+                border-radius: 10px;
+            }
+            #erster{
+                color: cornsilk;
+                background-color: blueviolet;
+                width: 200px;
+                float: left;
+            }
+            #zweiter{
+                color: blueviolet;
+                background-color: cornsilk;
+                width: 200px;
+                float: right;                
+            }
+            #blue{
+                color: aqua;
+            }
+            #Position{
+                background-color: aqua;
+                position: relative;
+                left: 200px;
+                width: 300px;
+            }
+            #margins{
+                background-color: antiquewhite;
+                width: 200px;
+                margin-top: 10px;        
+            }
+            #margins2{
+                background-color: burlywood;
+                width: 200px;
+                margin: 10px;   
+            }
+            #padding{
+                background-color: antiquewhite;
+                width: 200px;
+                height: 200px;
+                padding: 200px
+                
+            }
+            #padding2{
+                background-color: burlywood;
+                width: 200px;
+                height: 200px;
+                padding: 50px
+            }
+            #fonts{        
+                font-family: fantasy;
+                margin: 10px;
+            } 
+            #Google{
+                font-family: 'Alumni Sans Inline One', cursive;
+                margin: 10px;
+            }
+        </style>
+               
+    </head>
+        
+    <body>
+        
+        <h2>Design der Webseite mit CSS</h2>
+        <hr>
+        
+        <h3>Inline CSS</h3>
+        <p>Eigentlich macht man einen seperaten Abschnitt nur für css und das Design der Webseite, man kann jedoch auch im P-Tag den Style definieren. Dies geht mit "style" im P-Tag</p>
+        <p>Beispiel:</p>
+        
+            <p style="color: darkred; font-size: 150%">Hallo Welt, ich bin Nic</p>
+            <p style="color: blueviolet; font-size: 12">Das soll eine blaue Überschrifft sein.</p>
+        
+        <p>Man kann die Größe der Schrifft entweder in Prozent angeben, oder in der Schrifftgröße selber</p>
+        <hr>
+        
+        
+        <h3>Internal CSS</h3>
+        <p>Man kann im Head-Tag den kompletten Style festlegen. Dafür legen wir ein Style-tag an. Nun kann man in diesem Tag alle Tags bearbeiten. Falls man vorab schon inline css benutzt hat, werden diese nicht mit bearbeitet.</p>
+        <hr>
+        
+        
+        <h3>Klassen und Id´s</h3>
+        <p>Mit Klassen kann man festlegen, wie bestimmte Elemente der Webseite aussehen sollen. Die Klasse wird im head-Bereich der Webseite angelegt und definiert. Dies geschieht über einen Punkt, gefolgt vom Namen der Klasse. Im Tag des jeweiligen Elementes wird die Klasse nun zugeordnet.</p>
+        <p>Beispiel:</p>
+        
+            <p class="red">Klasse 1 </p>
+            <p class="Orange">Klasse 2 </p>
+            <p class="Yellow">Klasse 3 </p>
+            <p class="Green">Klasse 4 </p>
+        
+        <p>Dies geht natürlich auch mit Textbearbeitung, wie zB mit unterstrichenem Text. Das gleiche geht auch mit der Opacity, dafür diese einfach in den Klassen angeben und einen Wert zwischen 0 und 1 angeben</p>
+        <p>Beispiel:</p>
+        
+            <p class="unterstrichen">Dies ist unterstrichener text</p>
+        
+        <p>Falls man nur ein einzelnes tag verändern will, geht dies mit Id´s. Dafür das gleiche machen wie bei den Klassen, bloß mit Id statt class und statt dem Punkt, ein Hashtag. </p>
+        <p>Beispiel:</p>
+        
+            <p id="blue">ID 1</p>
+        
+        <p>Mit Hilfe des Span-Tags, können wir einzelne Wörter/text in einem Tag nochmals Klassen zuweisen</p>
+        <p>Beispiel:</p>
+        
+            <p class="red">Dies ist roter text. <span class="Orange">Dies ist oranger Text</span></p>
+        <p>Ein Div-Tag kann auch eine ID und eine Klasse gleichzeitig haben</p>  
+        <hr>
+        
+        
+        <h3>Divs</h3>
+        <p>Werden genutzt, um die Webseite zu struckturieren. Diese können auch mit Klassen bearbeitet werden.</p>
+        
+            <div class="Nic">
+        
+                <p>Dies ist das erste Div-Tag.</p>
+                <p>Nic Frigius</p>
+        
+            </div>
+        <hr>
+        
+        
+        <h3>Farben</h3>
+        <p>Farben werden meist in Hexadezimalcodes angegeben(Davor ein Hashtag). Die Webseite HTML Color codes kann dir diesen ausgeben. Man kann also die Farben entweder wörtlich benennen oder über den Hexadezimal-code angeben. Mir dem Plug-in Colorzilla kann man von anderen Webseiten den Hexacode bekommen für die ausgewählte Farbe. </p>
+        
+            <a style="font-size: 13" href="https://html-color-codes.info/">Hier klicken für die Farben</a>
+        
+        <hr>
+        
+        
+        <h3>Floating</h3>
+        <p>Floating wird benutzt um einzelne Elemente(zb Divs) auf der Webseite anzuordnen. Hier wieder eine Klasse anlegen und im Headbereich den float-Befehl anwenden. Der erste float-Befehl ist der dominante.</p>
+        <p>Beispiel:</p>
+        
+            <div id="erster">
+                <p>Hier haben wir Text 1</p>
+                <p>Hier haben wir Text 2</p> 
+            </div>
+
+            <div id="zweiter">
+                <p>Hier haben wir Text 3</p>
+                <p>Hier haben wir Text 4</p> 
+            </div>
+        
+        <p>Etwas mehr text!</p>
+        
+            <div class="clearFloat"></div>
+        
+        <p>P-Tags werden, falls die Div´s nur wenige Pixel breit sind, direkt neben die Div´s geschrieben. Um dies zu verhindern, muss man ein neuen Div anlegen mit der Klasse clearFloat und diese dann wieder im Head definieren. Damit werden alle Floats nach dem Div gelöscht.</p>
+        
+        <hr>
+        
+        
+        <h3>Positionierung</h3>
+        <p>Um die Positionierung der Div-Tags zu bestimmen, legen wir in der Klasse "position" an und in der nächsten Zeile arbeiten wir nun mit der verschiebung in Pixeln. Man gibt erst die Richtung an von der Abstand genommen werden soll und danach dann die Angabe wie weit in Pixeln (negativ ist auch möglich)</p>
+        <p>Beispiel:</p>
+        
+        <div id="Position">Hallo mein Name ist Nic Frigius</div>
+        
+        <p>Mit dem Attribut z-Index in der Klasse, kann man die Priorität festlegen, welches div-Tag bei einer Überschneidung mehrerer, angezeigt wird. Das div-tag mit dem höheren z-Index wird angezeigt.</p>
+        
+        <p>Es gibt mehrere Typen der Positionen. Zum einen haben wir die Position Relativ.Hier wird das Tag wird relativ zu der Startposition verschoben. Dann gibt es die absolute Position, da wird das Tag immer von der oberen Linken Ecke verschoben und es ignoriert alle anderen Tags. Es gibt auch die Position fixed, dann wird das Tag beim scrollen immer mit "gescrollt".</p>
+        
+        <hr>
+        
+        
+        <h3>Margins</h3>
+        <p>Margins sind die Grenzen zu anderen Divs. Margins werden auch in px angegeben. Man kann auch individuelle Abstände in die jeweilige Richtung definieren. Dafür einfach den gewünschten Abstand nacheinander in der Margin angeben. Es geht nach der Reihnfolge, Oben, Rechts, Unten, Links. Man kann auch nur izu einer Richtung den Abstand definieren, dafür "margin-top" (margin- die Richtung) angeben.</p>
+        <p>Beispiel:</p>
+        
+        <div id="margins">Hallo mein Name ist Nic</div>
+        <div id="margins2">Hallo mein Nachname ist Frigius</div>
+        
+        <hr>
+        
+        
+        <h3>Padding</h3>
+        <p>Padding bezeichnet den Abstand von Elementen in Div-Tags zu den Rändern der Tags. Paddings werden auch in px angegeben. Man kann auch individuelle Abstände in die jeweilige Richtung definieren. Dafür einfach den gewünschten Abstand nacheinander in dem Padding angeben. Es geht nach der Reihnfolge, Oben, Rechts, Unten, Links. Man kann auch nur den Abstand zu einer Richtung den Abstand definieren, dafür "padding-top" (padding- die Richtung) angeben.</p>
+        
+        <img src="61f271bb01d3b693943cae6ca63ec311.png">
+        
+        <p>Durch die Padding tags verändert sich automatisch die Höhe/Breite der Div´s, um den angegebenen Abstand zum Rand des Tags.</p>
+        
+        <p>Beispiel:</p>
+        
+        <div id="padding">Hallo mein Name ist Nic</div>
+        <div id="padding2">Hallo mein Nachname ist Frigius</div>
+        
+        <hr>
+        
+        
+        <h3>Wichtiger Zusatz zu Margin und Padding</h3>
+        <p>Man kann diese beiden Attribute auch auf den kompletten Body anwenden. Dafür einfach den Body im Klassen bereich definieren und dort die Margin oder das Padding anpassen. Das gleich gilt auch für alle P-Tags.</p>
+        
+        <hr>
+        
+        
+        <h3>Border</h3>
+        <p>Die Border umrandet den Div. Sie hat verschiedenene Attribute, eine Liste in dem unten genannten Link. Durch die Border vergrößert sich das Div Tag auch.</p>
+        <a href="https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/border-style">Hier die Liste</a>
+        <p>Beispiel:</p>
+        
+        <div id="square1" class="square"></div>
+        
+        <div id="square2" class="square"></div>
+        
+        <div id="square3" class="square"></div>
+        
+        <div class="clearFloat"></div>
+        <p>Man kann mit dem Befehl border-style jede einzelene Kante des Div-Tags einzeln gestalen, auch hier geht es im Uhrzeigersinn. Man kann die Art der Border, die Farbe und die Breite verändern. Mit dem Befehl border-radius, kann man seine Div-Tagsabrunden.</p>
+        
+        <hr>
+        
+        
+        <h3>Fonts</h3>
+        <p>Mit den Fonts verändert man die Schriftart. Dies geht auch in dem Style-Tag. Men muss aufpassen, welche Fonts man benutzt, da nicht jeder Browser/PC jede Schriftart kennt. Deswegen ist sicherer eine Font-Familie anzugeben, da doert, falls die erste Art nicht funktioniert, zu einer ähnlichen übergegangen wird.</p>
+        
+        <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">Hier eine Liste mit Websafe Fonts</a>
+        
+        <p>Wenn man aufjedenfall einen bestimmten Font haben will, kann man dies über google-fonts machen. Dafür auf die unten verlinkte Seite, den Code (href) in den Head-Tag copieren und dann die angegeben Font-Family in unseren eigenen Style Tag einfügen.</p>
+        
+        <a href="https://fonts.google.com/">Hier klicken um zu Google-Fonts zu kommen</a>
+        
+        <div id="fonts">Dies mist etwas Text!</div>
+        
+        <div id="Google">Dies ist etwas mehr Text!</div>
+    
+        <hr>
+        
+        
+        <h3>Text Stylen</h3>
+        <p>Man kann den Text auch mit Klassen im Style-Tag verändern. Dies geht mit dem Befehl font-weight, font-style ud text-decoration. Natürlich geht dies auch mit der Größe des Texts über Font-size.</p>
+        <p>Beispiel:</p>
+        
+        <p class="bold">Dies ist fetter Text!</p>
+        <p class="italic">Dies ist kursiver Text! <span class="beides">Und dies ist fetter und kursiver Text!</span> </p>
+        <p class="underlined">Dies ist unterstrichener Text!</p>
+        
+        <hr>
+        
+        
+        <h3>Links Stylen</h3>
+        <p>Wenn man Links nicht unterstrichen haben will, kann man dies auch über text-decoration im Style-Tag machen.</p>
+        <p>Beispiel:</p>
+        
+        <a class="Link" href="">Nicht unterstrichen.</a>
+        
+        <p>Wenn man den Text des Links verändern möchte, wenn der Cursour auf ihm ist geht dies mit a:hover. Wenn man dies nur bei bestimmten Id´s/Klassen haben möchte lautet die Syntax a.(Klasse/ID).hover{}.</p>
+        
+        <a class="hover" href="">Veränderter Text</a>
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+</html>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </body>
+
+</html>
