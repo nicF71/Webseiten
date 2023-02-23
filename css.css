@@ -1,0 +1,138 @@
+<style type="text/css">
+
+h3 {
+                color: brown   
+            }
+            
+            p {        
+                font-size: 13
+            }
+            
+            .red{
+                color: red;
+            }
+            
+            .orange{
+                color: orange;
+            }
+            .yellow{
+                color: yellow;
+            }
+            .green{
+                color: yellowgreen;
+            }
+            .Nic{
+                color: firebrick;
+                background-color: beige;
+                width: 1890px;  
+            }
+            .clearFloat{
+                clear: both;
+            }
+            .unterstrichen{
+                text-decoration: underline;  
+            }
+            .square{
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left
+            }
+            .bold{
+                font-weight: bold;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .beides{
+                font-weight: bold;
+            }
+            .underlined{
+                text-decoration: underline;
+            }
+            .Link{
+                text-decoration: none;
+            }
+            a.hover:hover{
+                text-decoration: overline;
+                color: yellow;
+            }
+            #square1{
+                background-color: bisque;
+                border: 2px black solid;
+            }
+            #square2{
+                background-color:antiquewhite;
+                border: 2px green dotted;
+            }
+            #square3{
+                background-color:blanchedalmond;
+                border: 2px red dashed;
+                border-radius: 10px;
+            }
+            #erster{
+                color: cornsilk;
+                background-color: blueviolet;
+                width: 200px;
+                float: left;
+            }
+            #zweiter{
+                color: blueviolet;
+                background-color: cornsilk;
+                width: 200px;
+                float: right;                
+            }
+            #blue{
+                color: aqua;
+            }
+            #Position{
+                background-color: aqua;
+                position: relative;
+                left: 200px;
+                width: 300px;
+            }
+            #margins{
+                background-color: antiquewhite;
+                width: 200px;
+                margin-top: 10px;        
+            }
+            #margins2{
+                background-color: burlywood;
+                width: 200px;
+                margin: 10px;   
+            }
+            #padding{
+                background-color: antiquewhite;
+                width: 200px;
+                height: 200px;
+                padding: 200px
+                
+            }
+            #padding2{
+                background-color: burlywood;
+                width: 200px;
+                height: 200px;
+                padding: 50px
+            }
+            #fonts{        
+                font-family: fantasy;
+                margin: 10px;
+            } 
+            #Google{
+                font-family: 'Alumni Sans Inline One', cursive;
+                margin: 10px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            a:hover{
+                
+                text-decoration: underline;
+            }
+            
+            a:visited{
+                color: aqua
+            }
+        </style>
